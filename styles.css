@@ -222,16 +222,67 @@ body {
 }
 
 
+@media (max-width: 1200px) {
+    .navbar {
+        margin: 5px 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        margin: 5px 5px;
+    }
+    .landing {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .heading-1,
+    .para-1 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px 0;
+    }
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+    .download-button {
+        width: auto;
+        margin-top: 10px;
+    }
+}
+
 @media (max-width: 576px) {
     .heading-1 {
-        font-size: 24px; /* Decreased font size for mobile screens */
-        padding: 40px 20px; /* Increased padding for the box */
-        box-sizing: border-box; /* Ensure padding is included in the box */
+        font-size: 40px;
+        text-align: center;
     }
     .para-1 {
-        font-size: 12px; /* Decreased font size for mobile screens */
-        padding: 30px 20px; /* Increased padding for the box */
-        box-sizing: border-box; /* Ensure padding is included in the box */
+        font-size: 16px;
+        text-align: center;
     }
     .started-button,
     .download-button {
