@@ -68,6 +68,7 @@ body {
 
 
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -141,11 +142,16 @@ body {
     width: 100%;
 }
 
+/* Landing Page Styles */
 .landing {
     margin: 115px auto 0;
     max-width: 1000px;
     padding: 0 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 638px;
+    height: auto;
 }
 
 .heading-1 {
@@ -167,7 +173,7 @@ body {
     box-sizing: border-box;
 }
 
-.started-button {
+.started-button, .download-button {
     width: 180px;
     height: 60px;
     background-color: black;
@@ -201,14 +207,6 @@ body {
     margin-left: 14px;
 }
 
-.landing {
-    display: flex;
-    flex-direction: column;
-    width: 638px;
-    height: auto;
-    box-sizing: border-box;
-}
-
 .both-together {
     display: flex;
     flex-direction: row;
@@ -221,7 +219,7 @@ body {
     margin-top: 16.75px;
 }
 
-
+/* Media Queries */
 @media (max-width: 1200px) {
     .navbar {
         margin: 5px 50px;
@@ -278,6 +276,8 @@ body {
     .heading-1 {
         font-size: 48px;
         text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
     .para-1 {
         font-size: 16px;
@@ -313,12 +313,13 @@ body {
     }
 }
 
-
+/* General Styles */
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
+
 
 .features {
     width: 100%;
