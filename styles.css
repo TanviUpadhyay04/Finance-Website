@@ -455,7 +455,7 @@ img {
 .heading-2,
 .heading-3,
 .heading-4 {
-    /* Ensure the animation is only applied when the 'slide-in' class is present */
+  
     animation: slideInFromRight 1s ease-in-out forwards;
 }
 
