@@ -140,6 +140,15 @@ body {
     height: 100%;
     width: 100%;
 }
+.download-button,
+.custom-button {
+    transition: transform 0.3s ease;
+}
+
+.download-button:hover,
+.custom-button:hover {
+    transform: scale(1.1);
+}
 
 .landing {
     margin: 115px auto 0;
@@ -219,6 +228,20 @@ body {
 
 .paper {
     margin-top: 16.75px;
+}
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.heading-1 {
+    animation: slideInFromLeft 1s ease-in-out forwards; /* Adjusted animation duration */
 }
 
 
@@ -418,6 +441,23 @@ img {
     }
 }
 
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.heading-2,
+.heading-3,
+.heading-4 {
+    /* Ensure the animation is only applied when the 'slide-in' class is present */
+    animation: slideInFromRight 1s ease-in-out forwards;
+}
 
 .advantages {
     width: 100%;
